@@ -1,3 +1,4 @@
+#!/bin/bash
 FROM        azul/zulu-openjdk:17
 
 LABEL       author="Software-noob" maintainer="admin@softwarenoob.com"
