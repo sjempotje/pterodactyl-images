@@ -1,6 +1,6 @@
-# Pterodactyl Images
+# Pterodactyl/WISP Docker Images
 
-Docker images that can be used with the Pterodactyl/WISP Game Panel. You can request more images by opening a new issue.
+Docker images that can be used with the Pterodactyl/WISP Game Panel. You can request more images by opening a new issue. These are mostly created for myself.
 
 Additional Pterodactyl images can be found at [Parkervcp](https://github.com/parkervcp/images), [Matthewpi](https://github.com/matthewpi/images) and [Yolks](https://github.com/pterodactyl/yolks) repositories.
 
@@ -10,11 +10,47 @@ Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) f
 
 ![image](https://user-images.githubusercontent.com/10975908/120903180-56719d80-c64d-11eb-8666-02de8ea80701.png)
 
-## Pterodactyl/WISP Images
+### Supported Platforms
 
-Add the desired image link from below to your egg using the [instructions from above](https://github.com/Software-Noob/pterodactyl-images#pterodactyl-images).
+| Image                                                                                                       | Supported platforms |
+| ----------------------------------------------------------------------------------------------------------- | ------------------- |
+| [Java Azul Zulu](https://github.com/Software-Noob/pterodactyl-images#java-azul-zulu-amd64arm64)             | AMD64, ARM64        |
+| [Java Amazon Corretto](https://github.com/Software-Noob/pterodactyl-images#java-amazon-corretto-amd64arm64) | AMD64, ARM64        |
+| [Java Eclipse Temurin](https://github.com/Software-Noob/pterodactyl-images#java-eclipse-temurin-amd64arm64) | AMD64, ARM64        |
+| [Java GraalVM](https://github.com/Software-Noob/pterodactyl-images#java-graalvm-amd64arm64)                 | AMD64, ARM64        |
+| [Java OpenJ9](https://github.com/Software-Noob/pterodactyl-images#java-openj9-amd64)                        | AMD64               |
+| [Java Shenandoah](https://github.com/Software-Noob/pterodactyl-images#java-shenandoah-amd64arm64)           | AMD64, ARM64        |
+| [Node.js](https://github.com/Software-Noob/pterodactyl-images#nodejs-amd64arm64)                            | AMD64, ARM64        |
+| [Python](https://github.com/Software-Noob/pterodactyl-images#python-amd64arm64)                             | AMD64, ARM64        |
+| [Sourcemod](https://github.com/Software-Noob/pterodactyl-images#sourcemod-amd64)                            | AMD64               |
 
-### Java
+### Java Azul Zulu [AMD64/ARM64]
+
+- [Java 8 Zulu](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-zulu/8)
+  - `ghcr.io/software-noob/pterodactyl-images:java_8_zulu`
+- [Java 11 Zulu](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-zulu/11)
+  - `ghcr.io/software-noob/pterodactyl-images:java_11_zulu`
+- [Java 16 Zulu](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-zulu/16)
+  - `ghcr.io/software-noob/pterodactyl-images:java_16_zulu`
+- [Java 17 Zulu](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-zulu/17)
+  - `ghcr.io/software-noob/pterodactyl-images:java_17_zulu`
+- [Java 18 Zulu](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-zulu/18)
+  - `ghcr.io/software-noob/pterodactyl-images:java_18_zulu`
+- [Java 19 Zulu](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-zulu/19)
+  - `ghcr.io/software-noob/pterodactyl-images:java_19_zulu`
+
+### Java Amazon Corretto [AMD64/ARM64]
+
+- [Java 8 Amazon Corretto](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-corretto/8)
+  - `ghcr.io/software-noob/pterodactyl-images:java_8_corretto`
+- [Java 11 Amazon Corretto](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-corretto/11)
+  - `ghcr.io/software-noob/pterodactyl-images:java_11_corretto`
+- [Java 17 Amazon Corretto](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-corretto/17)
+  - `ghcr.io/software-noob/pterodactyl-images:java_17_corretto`
+- [Java 19 Amazon Corretto](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-corretto/19)
+  - `ghcr.io/software-noob/pterodactyl-images:java_19_corretto`
+
+### Java Eclipse Temurin [AMD64/ARM64]
 
 - [Java 8](https://github.com/Software-Noob/pterodactyl-images/tree/main/java/8)
   - `ghcr.io/software-noob/pterodactyl-images:java_8`
@@ -24,39 +60,43 @@ Add the desired image link from below to your egg using the [instructions from a
   - `ghcr.io/software-noob/pterodactyl-images:java_16`
 - [Java 17](https://github.com/Software-Noob/pterodactyl-images/tree/main/java/17)
   - `ghcr.io/software-noob/pterodactyl-images:java_17`
+- [Java 18](https://github.com/Software-Noob/pterodactyl-images/tree/main/java/18)
+  - `ghcr.io/software-noob/pterodactyl-images:java_18`
+- [Java 19](https://github.com/Software-Noob/pterodactyl-images/tree/main/java/19)
+  - `ghcr.io/software-noob/pterodactyl-images:java_19`
 
-#### Java openj9
+### Java GraalVM [AMD64/ARM64]
 
-- [Java 8 openj9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/8)
+- [Java 8 GraalVM-CE](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-graalvm/8)
+  - `ghcr.io/software-noob/pterodactyl-images:java_8_graalvm`
+- [Java 11 GraalVM JDK](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-graalvm/11)
+  - `ghcr.io/software-noob/pterodactyl-images:java_11_graalvm`
+- [Java 17 GraalVM JDK](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-graalvm/17)
+  - `ghcr.io/software-noob/pterodactyl-images:java_17_graalvm`
+
+### Java OpenJ9 [AMD64]
+
+- [Java 8 OpenJ9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/8)
   - `ghcr.io/software-noob/pterodactyl-images:java_8_openj9`
-- [Java 11 openj9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/11)
+- [Java 11 OpenJ9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/11)
   - `ghcr.io/software-noob/pterodactyl-images:java_11_openj9`
-- [Java 16 openj9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/16)
+- [Java 16 OpenJ9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/16)
   - `ghcr.io/software-noob/pterodactyl-images:java_16_openj9`
-- [Java 17 openj9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/17)
+- [Java 17 OpenJ9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/17)
   - `ghcr.io/software-noob/pterodactyl-images:java_17_openj9`
+- [Java 18 OpenJ9](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-openj9/18)
+  - `ghcr.io/software-noob/pterodactyl-images:java_18_openj9`
 
-#### Java shenandoah
+### Java Shenandoah [AMD64/ARM64]
 
-- [Java 8 shenandoah](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/8)
+- [Java 8 Shenandoah](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/8)
   - `ghcr.io/software-noob/pterodactyl-images:java_8_shenandoah`
-- [Java 11 shenandoah](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/11)
+- [Java 11 Shenandoah](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/11)
   - `ghcr.io/software-noob/pterodactyl-images:java_11_shenandoah`
-- [Java 17 shenandoah](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/16)
+- [Java 17 Shenandoah](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-shenandoah/17)
   - `ghcr.io/software-noob/pterodactyl-images:java_17_shenandoah`
 
-#### Java zulu
-
-- [Java 8 zulu](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-zulu/8)
-  - `ghcr.io/software-noob/pterodactyl-images:java_8_zulu`
-- [Java 11 zulu](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-zulu/11)
-  - `ghcr.io/software-noob/pterodactyl-images:java_11_zulu`
-- [Java 16 zulu](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-zulu/16)
-  - `ghcr.io/software-noob/pterodactyl-images:java_16_zulu`
-- [Java 17 zulu](https://github.com/Software-Noob/pterodactyl-images/tree/main/java-zulu/17)
-  - `ghcr.io/software-noob/pterodactyl-images:java_17_zulu`
-
-#### Node.js
+### Node.js [AMD64/ARM64]
 
 - [Nodejs 12](https://github.com/Software-Noob/pterodactyl-images/tree/main/nodejs/12)
   - `ghcr.io/software-noob/pterodactyl-images:nodejs_12`
@@ -70,55 +110,35 @@ Add the desired image link from below to your egg using the [instructions from a
   - `ghcr.io/software-noob/pterodactyl-images:nodejs_17`
 - [Nodejs 18](https://github.com/Software-Noob/pterodactyl-images/tree/main/nodejs/18)
   - `ghcr.io/software-noob/pterodactyl-images:nodejs_18`
+- [Nodejs 19](https://github.com/Software-Noob/pterodactyl-images/tree/main/nodejs/19)
+  - `ghcr.io/software-noob/pterodactyl-images:nodejs_19`
 
-#### Game specific
+### Python [AMD64/ARM64]
 
-- [`Source with sourcemod`](https://github.com/Software-Noob/pterodactyl-images/tree/main/games/source-sourcemod)
+- [Python 2.7](https://github.com/Software-Noob/pterodactyl-images/tree/main/python/2.7)
+  - `ghcr.io/software-noob/pterodactyl-images:python_2.7`
+- [Python 3.6](https://github.com/Software-Noob/pterodactyl-images/tree/main/python/3.6)
+  - `ghcr.io/software-noob/pterodactyl-images:python_3.6`
+- [Python 3.7](https://github.com/Software-Noob/pterodactyl-images/tree/main/python/3.7)
+  - `ghcr.io/software-noob/pterodactyl-images:python_3.7`
+- [Python 3.8](https://github.com/Software-Noob/pterodactyl-images/tree/main/python/3.8)
+  - `ghcr.io/software-noob/pterodactyl-images:python_3.8`
+- [Python 3.9](https://github.com/Software-Noob/pterodactyl-images/tree/main/python/3.9)
+  - `ghcr.io/software-noob/pterodactyl-images:python_3.9`
+- [Python 3.10](https://github.com/Software-Noob/pterodactyl-images/tree/main/python/3.10)
+  - `ghcr.io/software-noob/pterodactyl-images:python_3.10`
+- [Python 3.11](https://github.com/Software-Noob/pterodactyl-images/tree/main/python/3.11)
+  - `ghcr.io/software-noob/pterodactyl-images:python_3.11`
+
+## Game specific
+
+### Sourcemod [AMD64]
+
+- [Source with sourcemod](https://github.com/Software-Noob/pterodactyl-images/tree/main/games/source-sourcemod)
   - `ghcr.io/software-noob/pterodactyl-images:games_source-sourcemod`
 
   Optionally installs and updates SourceMod/Metamod on each server startup. Requires adding egg environment variable `SOURCEMOD`.
 
   ![image](https://user-images.githubusercontent.com/10975908/159126935-2e3f2883-3b89-4395-b28d-ab23dad0e5f8.png)
 
-  Custom versions can be set with the use of `SM_VERSION` and `MM_VERSION` variables. Invalid versions will default to the latest stable version.
-
-# ARM64 only images
-
-#### Java
-
-- [Java 8](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/java/8)
-  - `ghcr.io/software-noob/arm64:java_8`
-- [Java 11](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/java/11)
-  - `ghcr.io/software-noob/arm64:java_11`
-- [Java 15](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/java/15)
-  - `ghcr.io/software-noob/arm64:java_15`
-- [Java 16](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/java/16)
-  - `ghcr.io/software-noob/arm64:java_16`
-- [Java 17](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/java/17)
-  - `ghcr.io/software-noob/arm64:java_17`
-
-#### Node.js
-
-- [Nodejs 12](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/nodejs/12)
-  - `ghcr.io/software-noob/arm64:nodejs_12`
-- [Nodejs 14](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/nodejs/14)
-  - `ghcr.io/software-noob/arm64:nodejs_14`
-- [Nodejs 15](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/nodejs/15)
-  - `ghcr.io/software-noob/arm64:nodejs_15`
-- [Nodejs 16](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/nodejs/16)
-  - `ghcr.io/software-noob/arm64:nodejs_16`
-- [Nodejs 17](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/nodejs/17)
-  - `ghcr.io/software-noob/arm64:nodejs_17`
-- [Nodejs 18](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/nodejs/18)
-  - `ghcr.io/software-noob/arm64:nodejs_18`
-
-#### Python
-
-- [Python 3.6](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/python/3.6)
-  - `ghcr.io/software-noob/arm64:python_3.6`
-- [Python 3.7](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/python/3.7)
-  - `ghcr.io/software-noob/arm64:python_3.7`
-- [Python 3.8](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/python/3.8)
-  - `ghcr.io/software-noob/arm64:python_3.8`
-- [Python 3.9](https://github.com/Software-Noob/pterodactyl-images/tree/main/arm64/python/3.9)
-  - `ghcr.io/software-noob/arm64:python_3.9`
+  Custom versions can be set with the use of `SM_VERSION` and `MM_VERSION` variables. Invalid versions will default to the latest stable version. Default path is set to csgo and can be overridden with `INSTALL_PATH` egg environment variable.
